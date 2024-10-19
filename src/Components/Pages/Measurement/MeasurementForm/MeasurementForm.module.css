@@ -1,0 +1,61 @@
+.measurementForm {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.measurementForm input {
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 60vw;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.measurementForm input::placeholder {
+    color: white;
+}
+.measurementForm textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 60vw;
+    max-width: 60vw;
+    min-width: 60vw;
+}
+.measurementForm textarea::placeholder {
+    color: white;
+}
+.measurementForm button {
+    margin-bottom: 20px;
+    padding: 15px;
+    color: #184B7E;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.measurementForm button:hover {
+    background-color: #184B7E;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 339.20px) {
+    .measurementForm  {
+        /* width: 60vw; */
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .measurementForm input {
+        /* width: 80%; */
+    }
+}

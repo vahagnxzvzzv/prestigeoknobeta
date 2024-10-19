@@ -1,0 +1,27 @@
+.contact {
+    background-color: #184B7E;
+    width: 100%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+    /* justify-items: center; */
+    /* align-items: center; */
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.contact h1 {
+    color: white;
+    margin-top: 50px;
+}
+.yandexMaps {
+    width: 84%;
+    /* border-radius: 15px; */
+}
+@media (max-width: 577.60px) {
+    .contact {
+        /* padding-left: 20px; */
+        /* justify-items: center; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}

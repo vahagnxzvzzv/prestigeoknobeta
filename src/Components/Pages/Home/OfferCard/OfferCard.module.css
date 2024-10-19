@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    
+}
+.card img {
+    border-radius: 90%;         /* Makes the image circular */
+    overflow: hidden; 
+    width: 203px;
+    height: 186px;
+    margin-bottom: 20px;
+}
+.card a {
+    background-color: #184B7E;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 40px;
+    transition: 0.3s;
+}
+.card a:hover {
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid #184B7E;
+    color: #184B7E;
+}
+@media (max-width: 1168px) {
+    .card {
+      flex: 0 0 calc(50% - 10px); 
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      margin-top: 20px;
+    }
+}

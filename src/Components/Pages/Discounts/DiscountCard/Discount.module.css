@@ -1,0 +1,86 @@
+.cardContainer {
+    padding-left: 7vw;
+    background-color: #184B7E;
+    margin-bottom: 100px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: start; */
+    margin:  auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    margin-top: 50px;
+    /* cursor: pointer; */
+    
+}
+/* a {
+    text-decoration: none;
+}  */
+.cardContainer h1 {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.discountDescription {
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 20px; */
+}
+.discountDescription h2 {
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+    padding-right: 10px;
+    
+}
+.discountDescription p {
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.discountDescription img {
+    width: 300px;
+    padding-bottom: 50px;
+}
+.discountInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 736px) {
+    .cardContainer {
+        flex-direction: column;
+    
+    }
+    .discountDescription {
+
+        flex-direction: column;
+    }
+    .discountDescription h2 {
+        padding-left: 0px;
+    }
+    .discountDescription p {
+        padding-left: 0px;
+    }
+    .discountDescription img {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 401.60px) {
+    .cardContainer img {
+        width: 180px;
+    }
+    .cardContainer h2 {
+        font-size: 18px;
+    }
+    .cardContainer p {
+        font-size: 13px;
+    }
+    .cardContainer h1 {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,20 @@
+.measurementContainer {
+    background-color: #184B7E;
+    /* padding-left: 10vw; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.measurementContainer h1{
+    color: white;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+@media (max-width: 339.20px) {
+    .measurementContainer h1 {
+        font-size: 26px;
+    }
+}

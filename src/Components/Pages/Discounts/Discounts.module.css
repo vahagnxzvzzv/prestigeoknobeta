@@ -1,0 +1,7 @@
+.discountContainer {
+    display: flex;
+    flex-direction: column;
+}
+.discountsLabel {
+    padding-left: 7vw;
+}

@@ -1,0 +1,18 @@
+.aboutContainer {
+    width: 100%;
+    background-color: #1f4d7a;
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.aboutTitle {
+    color: white;
+    padding-left: 10vw;
+    font-weight: 500;
+}
+.aboutContainer p {
+    width: 80vw;
+    padding-left: 10vw;
+}

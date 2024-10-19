@@ -1,0 +1,23 @@
+.extendedProductContainer {
+    background-color: #184B7E;
+    /* color: #184B7E; */
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+.extendedProductContainer h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    /* width: 600px; */
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}

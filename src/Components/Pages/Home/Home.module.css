@@ -1,0 +1,113 @@
+.carouselContainer {
+    max-width: 85%;
+    margin: 0 auto; /* Center the carousel */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border-radius: 15px; */
+   
+
+  }
+  
+  .slide {
+    position: relative; /* Positioning for text overlay */
+  }
+  
+  .carouselImage {
+    width: 100%;      /* Make the image take full width of its container */
+    height: 400px;    /* Set a fixed height */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    /* border-radius: 15px; */
+  }
+  
+  /* New overlay class */
+  .imageOverlay {
+    position: absolute; /* Positioning for overlay */
+    top: 0;            /* Cover the whole image */
+    left: 0;           /* Cover the whole image */
+    width: 100%;       /* Full width */
+    height: 100%;      /* Full height */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    z-index: 1;        /* Ensure the overlay is above the image */
+  }
+  
+  .textOverlay {
+    position: absolute; 
+    top: 50%;          /* Center vertically */
+    left: 50%;         /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    color: white;      /* Text color */
+    font-size: 24px;   /* Text size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better readability */
+    z-index: 2;        /* Ensure text is above the overlay */
+    text-align: center;
+    
+  }
+  .textOverlay h1 {
+    font-weight: 300;
+    /* margin-top: 100px; */
+  }
+
+
+.carouselContainer .offer_label {
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.offers {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #184B7E;
+    padding: 30px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+   
+}
+
+.why_us_label {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.whyus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 80px;
+  gap: 30px;
+  /* justify-items: center; */
+  align-items: center;
+  justify-content: center;
+  /* width: 70vw; */
+  /* flex-direction: row; */
+}
+
+@media (max-width: 823.20px) {
+  .whyus {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width: 1168px) {
+    .offers {
+        /* width: 60%; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 635.20px) {
+    .offers {
+        flex-direction: column;
+    }
+}
+@media (max-width: 754.40px) {
+  .carouselContainer h1 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
+
