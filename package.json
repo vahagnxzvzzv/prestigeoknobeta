@@ -1,7 +1,7 @@
 {
   "name": "prestigeokno-beta",
   "version": "0.1.0",
-  "homepage": "https://github.com/vahagnxzvzzv/prestigeokno_beta.git",
+  "homepage": "https://vahagnxzvzzv.github.io/vahagnxzvzzv/prestigeokno_beta.git",
   "private": true,
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
