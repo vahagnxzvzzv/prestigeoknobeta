@@ -1,30 +1,48 @@
-import React from "react";
+import React, {useRef}  from "react";
 import classes from './MeasurementForm.module.css'
+import emailjs, { send } from '@emailjs/browser'
+
 
 
 
 function MeasurementForm() {
+
+    const form = useRef()
+
+    const sendEmail = (e) => {
+
+        e.preventDefault()
+
+        emailjs.sendForm('service_ic8322i', 'template_cjbbd88', form.current, 'zeMKUPFblTG2c84uA')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text)
+            }
+        )
+    }
+
     return (
-        <form className={classes.measurementForm}>
+        <form ref={form} onSubmit={sendEmail} className={classes.measurementForm}>
             <input 
                 placeholder="Ваше имя*"
                 type="text"
-                name="name"
+                name="user_name"
                 required
             />
             <input 
                 placeholder="Ваш телефон*"
                 type="number"
-                name="phone_number"
+                name="user_phone"
                 required
             />
             <textarea 
                 placeholder="Комментарий*"
                 type="text"
-                name="comment"
+                name="user_description"
                 required
             />
-            <button>Отправить</button>
+            <button type="submit">Отправить</button>
         </form>
     )
 }
