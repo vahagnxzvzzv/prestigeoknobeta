@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prestigeoknobeta/static/css/main.dbf46c72.css",
-    "main.js": "/prestigeoknobeta/static/js/main.3954f094.js",
+    "main.css": "/prestigeoknobeta/static/css/main.38c3d1fc.css",
+    "main.js": "/prestigeoknobeta/static/js/main.ce73505f.js",
     "static/js/453.a2304702.chunk.js": "/prestigeoknobeta/static/js/453.a2304702.chunk.js",
     "static/media/home_page_carousel_1.svg": "/prestigeoknobeta/static/media/home_page_carousel_1.94f60b97d063bfa4b8a069c721cdecd0.svg",
     "static/media/balconies_loggias.svg": "/prestigeoknobeta/static/media/balconies_loggias.510b63710485711230479b64e4a877ae.svg",
@@ -24,12 +24,12 @@
     "static/media/precent_icon.svg": "/prestigeoknobeta/static/media/precent_icon.bed859da35d138fc6aa164d22a15bfde.svg",
     "index.html": "/prestigeoknobeta/index.html",
     "static/media/calculator_icon.svg": "/prestigeoknobeta/static/media/calculator_icon.f73adfd6bc203fa92f3e982330d51ff7.svg",
-    "main.dbf46c72.css.map": "/prestigeoknobeta/static/css/main.dbf46c72.css.map",
-    "main.3954f094.js.map": "/prestigeoknobeta/static/js/main.3954f094.js.map",
+    "main.38c3d1fc.css.map": "/prestigeoknobeta/static/css/main.38c3d1fc.css.map",
+    "main.ce73505f.js.map": "/prestigeoknobeta/static/js/main.ce73505f.js.map",
     "453.a2304702.chunk.js.map": "/prestigeoknobeta/static/js/453.a2304702.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbf46c72.css",
-    "static/js/main.3954f094.js"
+    "static/css/main.38c3d1fc.css",
+    "static/js/main.ce73505f.js"
   ]
 }
