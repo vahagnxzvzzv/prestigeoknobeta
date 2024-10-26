@@ -1,0 +1,45 @@
+.portfolioContainer h1 {
+    margin-left: 12vw;
+    margin-bottom: 30px;
+}
+.photo_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.photo {
+    width: 300px;
+    height: auto;  
+    display: flex; 
+    margin: 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pagination button {
+    background-color: #184B7E;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pagination span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 864px) {
+    .portfolioContainer h1 {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+}

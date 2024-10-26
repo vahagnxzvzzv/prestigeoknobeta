@@ -13,6 +13,7 @@ import Discounts from './Components/Pages/Discounts/Discounts';
 import Reviews from './Components/Pages/Reviews/Reviews';
 import Contact from './Components/Pages/Contact/Contact';
 import Measurement from './Components/Pages/Measurement/Measurement';
+import Works from './Components/Pages/Works/Works';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path='/reviews' element={<Reviews />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/measurement' element={<Measurement />} />
+                <Route path='/our_works' element={<Works />}/>
               </Routes>
             </main>
             <Footer />
