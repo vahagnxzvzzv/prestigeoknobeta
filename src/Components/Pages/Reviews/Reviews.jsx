@@ -1,78 +1,105 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from './Reviews.module.css'
 import ReviewsCard from "./ReviewsCard/ReviewsCard";
 import { useState } from "react";
+import axios from 'axios'
 
 
 function Reviews() {
-
-
-    const [formData, setFormData] = useState({
-        name: '',
-        grade: '',
-        review: '',
-        date: '',
-    })
-
     const [reviews, setReviews] = useState([]);
+    const [newReview, setNewReview] = useState({ reviewCreator: '', reviewGrade: '', reviewDescription: ''})
 
-    const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData({...formData, [name]: value})
+    const fetchReviews = async () => {
+        try {
+            const response = await axios.get('http://localhost:3000/reviews');
+            setReviews(response.data)
+        } catch(error) {
+            console.log('fetch error',error)
+        }
     }
 
-    const handleSubmit = (e) => {
+    const addReview = async (e) => {
         e.preventDefault()
-        const currentDate = new Date().toLocaleDateString();
-        setReviews([...reviews, {...formData, date: currentDate}])
-        setFormData({
-            name: '',
-            grade: '',
-            review: '',
-            date: '',
-        })
+        try {
+            await axios.post('http://localhost:3000/reviews', newReview);
+            setNewReview({reviewCreator: '', reviewGrade: '', reviewDescription: '' });
+            fetchReviews()
+        } catch (error) {
+            console.log('adding review error', error)
+        }
     }
+
+    useEffect(() => {
+        fetchReviews()
+    }, [])
+
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     grade: '',
+    //     review: '',
+    //     date: '',
+    // })
+
+    // const [reviews, setReviews] = useState([]);
+
+    // const handleChange = (e) => {
+    //     const {name, value} = e.target;
+    //     setFormData({...formData, [name]: value})
+    // }
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     const currentDate = new Date().toLocaleDateString();
+    //     setReviews([...reviews, {...formData, date: currentDate}])
+    //     setFormData({
+    //         name: '',
+    //         grade: '',
+    //         review: '',
+    //         date: '',
+    //     })
+    // }
 
     return (
         <div className={classes.reviews}>
 
         <div>
-                {reviews.length > 0 ? (
-                    reviews.map((review, index) => (
-                        <ReviewsCard
-                            reviewAuthor={review.name}
-                            reviewGrade={review.grade}
-                            reviewDate={review.date}
-                            reviewDescription={review.review}
-                         />
-                    ))
-                ) : (
-            <p className={classes.noRivewsAlert}>Пока нет отзывов.</p>
-                )}
+                {reviews.map((review) => {
+                    return (<ReviewsCard 
+                        reviewAuthor={review.reviewCreator}
+                        reviewGrade={review.reviewGrade}
+                        reviewDescription={review.reviewDescription}
+                        reviewDate={review.reviewDate}
+                    />
+                    )
+                })}
         </div>
-        <form onSubmit={handleSubmit} className={classes.review_form}>
+        <form onSubmit={addReview} className={classes.review_form}>
             <h2>Оставьте отзыв</h2>
         <input
           type="text"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
+          value={newReview.reviewCreator}
+        //   onChange={handleChange}
+          onChange={(e) => setNewReview({ ...newReview, reviewCreator: e.target.value })}
           placeholder="Имя*"
           required
         />
         <input
           type="text"
           name="grade"
-          value={formData.grade}
-          onChange={handleChange}
+          value={newReview.reviewGrade}
+        //   onChange={handleChange}
+          onChange={(e) => setNewReview({ ...newReview, reviewGrade: e.target.value })}
+
           placeholder="Оценка*"
           required
         />
         <textarea
-          type="email"
+          type="text"
           name="review"
-          value={formData.review}
-          onChange={handleChange}
+          value={newReview.reviewDescription}
+          onChange={(e) => setNewReview({ ...newReview, reviewDescription: e.target.value })}
+          
           placeholder="Отзыв*"
           required
         />

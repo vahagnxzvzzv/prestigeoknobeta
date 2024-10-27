@@ -60,8 +60,8 @@ function Header() {
           <ul className={`${classes.nav_links} ${isOpen ? classes.show : ""}`}>
             <li><Link to="/">Главная</Link></li>
             <li><Link to="/profiles">Профили</Link></li>
-            <div className={classes.dropdown}>
-              <li>
+            {/* <div className={classes.dropdown}> */}
+              {/* <li> */}
                 <Dropdown
                   options={dropdownOptions}  // Pass only labels
                   onChange={handleSelect}    // Handle selection
@@ -72,8 +72,8 @@ function Header() {
                   arrowClassName={classes.dropdown_arrow}
                   menuClassName={classes.dropdownMenu}
                 />
-              </li>
-            </div>
+              {/* </li> */}
+            {/* </div> */}
             <li><Link to="/discounts">Новости и акции</Link></li>
             <li><Link to="/reviews">Отзывы</Link></li>
             <li><Link to="/our_works">Наши работы</Link></li>

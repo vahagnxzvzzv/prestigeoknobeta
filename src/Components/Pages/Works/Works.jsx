@@ -5,7 +5,7 @@ import classes from './Works.module.css'
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(10); // Change this value as needed
+  const [itemsPerPage] = useState(10); 
   const [totalPhotos, setTotalPhotos] = useState(0);
 
   useEffect(() => {

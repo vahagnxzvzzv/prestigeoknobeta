@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 3px; */
   }
   
   .navbar {
@@ -49,6 +48,7 @@
     display: flex;
     padding: 0;
     margin: 0;
+    flex: 1;
   }
   
   .nav_links li {
@@ -86,19 +86,10 @@
     display: none;
   }
   
-  /* .dropdownMenu {
-    position: absolute;
-    top: 42%; /* Aligns with the bottom of the "Услуги для вас" link */
-    /* left: 30%; /* Aligns with the left edge of the parent li */
-    /* background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 4px;
-    z-index: 100; Ensure dropdown is above other elements */ 
-/* } */
+  
 
 .dropdownMenu ul {
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -117,19 +108,15 @@
 } 
 
 .dropdown {
-  height: 200px;
-  /* background-color: black; */
+  /* height: 200px; */
   cursor: pointer;
   
 }
 .dropdown_menu {
-  /* height: 200px; */
-  /* background-color: #16395a; */
-  height: 57px;
-  width: 180px;
-  /* padding-left:  !important; */
+  padding: 10px 20px;
+  height: 8vh ;
+  width: 220px;
   background-color: #1f4d7a !important;
-  /* padding: 9px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,16 +131,10 @@
 }
 .dropdown_arrow  {
   margin-top: 10px;
-  /* background-color: black; */
-  /* color: white; */
 }
 .dropdown_placeholder {
   color: white;
   cursor: pointer;
-  /* background-color: #1f4d7a; */
-}
-.dropdownMenu {
-  
 }
 
   @media (max-width: 863.20px) {
@@ -162,8 +143,7 @@
       padding-top: 20px; 
       flex-direction: column; 
       width: 100%;
-      /* background-color: #1f4d7a; */
-      /* position: absolute;  */
+      
       left: 0;
     }
     .dropdown {
@@ -176,12 +156,9 @@
       width: 85.1vw;
       color: #1f4d7a;
       background-color: #1f4d7a;
-      /* height: 0px; */
       justify-content: center;
       align-items: center;
       transition: 0s !important;
-      /* color: #1f4d7a; */
-      /* background-color: white; */
     
     }
     .dropdownMenu {
@@ -192,14 +169,10 @@
     }
     .nav_links a{
         border-bottom: 1px solid white;
-        /* border-radius: 15px; */
-        /* margin-top: 5px; */
+        
     }
     .nav_links li:first-child a {
         border-radius: 0px;
-        /* border-bottom: 1px solid white; */
-
-        /* border-left: none; */
     }
     .nav_links li:last-child a {
         border-radius: 0px;
@@ -216,7 +189,7 @@
       color: white;
       border-radius: 15px;
       
-      /* width: 100%; */
+      
     }
   
     .nav_links.show {
@@ -255,7 +228,6 @@
   @media (max-width: 460px) {
     .header {
       flex-direction: column-reverse;
-      /* flex-wrap: wrap; */
       gap: 20px;
   }
   .logo {
@@ -272,23 +244,16 @@
   .phoneNumber {
       display: flex;
       justify-content: space-between;
-      /* width: 100%; */
-      /* font-size: 12px; */
-      /* padding-left: 10px; */
-      /* margin-right: 10px; */
+      
 
-  }
-  .location_name {
-    /* font-size: 13px; */
   }
 
   .phone_icon {
-      margin: 0 5px; /* Center the icon between the numbers */
-      /* margin-left: 10px; */
+      margin: 0 5px; 
   }
 
   .phoneNumber h2 {
-      margin: 0 10px; /* Add some space between the numbers and the icon */
+      margin: 0 10px; 
   }
   }
 
