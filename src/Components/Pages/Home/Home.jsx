@@ -54,11 +54,7 @@ function Home() {
         offer_button_title='Балконы и лоджии'
         offer_link='./balconies_loggias'
       />
-      <OfferCard 
-        offer_image='https://bym.com.ua/home/catalog_products/item_402/image/garant-176-beton-antracit.jpg' 
-        offer_button_title='Входные двери'
-        offer_link='./entrance_doors'
-      />
+      
       <OfferCard 
         offer_image='https://sds163.ru/upload/iblock/c26/c265f288eb382fc209fa4d1b21b9bddf.jpg' 
         offer_button_title='Входные группы'

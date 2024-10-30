@@ -21,6 +21,7 @@
     border-radius: 15px;
     height: 40px;
     transition: 0.3s;
+    border: 1px solid #184B7E;
 }
 .card a:hover {
     transition: 0.3s;

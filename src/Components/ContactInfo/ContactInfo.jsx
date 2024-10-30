@@ -8,7 +8,7 @@ function ContactInfo(props) {
         <div className={classes.contactInfoPhone}>
         <h2>8 (909) 380-09-09, 8 (8443) 21-07-08</h2>
         </div>
-        <a href='/leave_request' className={classes.contactInfoButton}>Оставить заявку</a>
+        {/* <a href='/leave_request' className={classes.contactInfoButton}>Оставить заявку</a> */}
     </div>
   )
 }
