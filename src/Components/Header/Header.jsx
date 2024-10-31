@@ -48,8 +48,8 @@ function Header() {
           <div className={classes.contact_info}>
             <img className={classes.phone_icon} src={phone_icon} alt="Phone Icon" />
             <div className={classes.phoneNumber}>
-              <h2>8 (909) 380-09-09</h2>
-              <h2>8 (8443) 21-07-08</h2>
+              <h2>+79033163334</h2>
+              {/* <h2>8 (8443) 21-07-08</h2> */}
             </div>
           </div>
         </header>

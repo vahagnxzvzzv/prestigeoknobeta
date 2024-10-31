@@ -1,4 +1,4 @@
-import React, {useRef}  from "react";
+import React, {useRef, useState}  from "react";
 import classes from './MeasurementForm.module.css'
 import emailjs, { send } from '@emailjs/browser'
 
@@ -8,6 +8,7 @@ import emailjs, { send } from '@emailjs/browser'
 function MeasurementForm() {
 
     const form = useRef()
+    const [isSend, setIsSend] = useState(false)
 
     const sendEmail = (e) => {
 
@@ -20,6 +21,7 @@ function MeasurementForm() {
                 console.log(error.text)
             }
         )
+        setIsSend(true)
     }
 
     return (
@@ -42,6 +44,7 @@ function MeasurementForm() {
                 name="user_description"
                 required
             />
+            { isSend && <p style={{color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '30px'}}>Ваш замер был успешно отправлен</p> }
             <button type="submit">Отправить</button>
         </form>
     )

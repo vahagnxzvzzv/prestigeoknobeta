@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import classes from './Contact.module.css'
 import emailjs from '@emailjs/browser'
 
@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 function ContactForm() {
 
     const form = useRef();
+    const [isSend, setIsSend] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -17,6 +18,7 @@ function ContactForm() {
                 console.log(error.text);
             }
         )
+        setIsSend(true)
     }
 
     return (
@@ -48,6 +50,7 @@ function ContactForm() {
                     required
                     
                 />
+                { isSend && <p style={{ color: 'white', justifyContent: 'center', alignItems: 'center', marginBottom: '30px' }}>Ваши контакты были успешно отправлены</p> }
                 <button type="submit" >Отправить</button>
             </form>
         </div>
