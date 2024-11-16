@@ -1,6 +1,7 @@
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { Helmet } from 'react-helmet-async';
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Pages/Home/Home';
@@ -17,7 +18,19 @@ import Works from './Components/Pages/Works/Works';
 
 function App() {
   return (
-    <Router>
+    <div>
+      <Helmet>
+        <title>My Page Title</title>
+        <meta name='description' content={description} />
+        <meta name="keywords" content="react, meta tags, seo" />
+        <meta name="author" content="Vahagn Gasparyan" />
+        {/* FaceBook */}
+        <meta property="og:title" content="My Page Title" />
+        <meta property="og:description" content="This is a description of my page" />
+        <meta property="og:image" content="https://example.com/image.jpg" />
+        <meta property="og:url" content="https://example.com/my-page" />
+      </Helmet>
+      <Router>
         <div  className="App">
             <Header />
             <main className='main'>
@@ -37,7 +50,9 @@ function App() {
             </main>
             <Footer />
         </div>
-    </Router>
+      </Router>
+    </div>
+    
   );
 }
 
