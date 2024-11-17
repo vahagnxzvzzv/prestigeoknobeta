@@ -12,6 +12,7 @@
     "bootstrap": "^5.3.3",
     "flowbite": "^2.5.2",
     "flowbite-react": "^0.10.2",
+    "matchmedia-polyfill": "^0.3.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
@@ -39,9 +40,7 @@
       "react-app/jest"
     ]
   },
-  "jest" : {
-    
-  },
+  "jest": {},
   "browserslist": {
     "production": [
       ">0.2%",

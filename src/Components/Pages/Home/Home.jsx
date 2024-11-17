@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import carousel_img1 from '../../Assets/home_page_carousel_1.svg';
 import classes from './Home.module.css'; // Import your CSS module
 import "slick-carousel/slick/slick.css";
