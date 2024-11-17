@@ -19,17 +19,17 @@ import Works from './Components/Pages/Works/Works';
 function App() {
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>My Page Title</title>
         <meta name='description' content={description} />
         <meta name="keywords" content="react, meta tags, seo" />
         <meta name="author" content="Vahagn Gasparyan" />
-        {/* FaceBook */}
+        FaceBook
         <meta property="og:title" content="My Page Title" />
         <meta property="og:description" content="This is a description of my page" />
         <meta property="og:image" content="https://example.com/image.jpg" />
         <meta property="og:url" content="https://example.com/my-page" />
-      </Helmet>
+      </Helmet> */}
       <Router>
         <div  className="App">
             <Header />

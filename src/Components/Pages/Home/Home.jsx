@@ -11,6 +11,7 @@ import toolsIcon from '../../Assets/tools_icon.svg'
 import calculator_icon from '../../Assets/calculator_icon.svg'
 import precent_icon from '../../Assets/precent_icon.svg'
 import verify_icon from '../../Assets/verify_icon.svg'
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -29,6 +30,11 @@ function Home() {
 
   return (
     <div className={classes.home}>
+      <Helmet>
+        <title>Prestige Okno - Home</title>
+        <meta name="description" content="Prestige Okno is a window industry company with many years of career" />
+        <link rel="canonical" href="localhost:3000/" />
+      </Helmet>
     <div className={classes.carouselContainer}>
       <Slider {...settings}>
         <div className={classes.slide}>

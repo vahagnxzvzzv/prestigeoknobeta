@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import classes from './Works.module.css'
+import { Helmet } from 'react-helmet-async';
 
 const PhotoGallery = () => {
   const [photos, setPhotos] = useState([]);
@@ -36,7 +37,16 @@ const PhotoGallery = () => {
   };
 
   return (
+
     <div className={classes.portfolioContainer}>
+      <Helmet>
+        <title>Prestige Okno - Our works</title>
+        <meta
+          name="description"
+          content="View our done works!"
+        />
+        <link rel="canonical" href="localhost:3000/our_works" />
+      </Helmet>
       <h1>Наши работы</h1>
       <div className={classes.photo_grid}>
         {photos.map((photo, index) => (

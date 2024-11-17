@@ -3,6 +3,7 @@ import classes from "./Discounts.module.css";
 import DiscountCard from "./DiscountCard/DiscountCard";
 import bargain from "../../Assets/bargain.svg";
 import axios from "axios";
+import { Helmet } from "react-helmet-async";
 
 function Discounts() {
   // Initialize discounts as an empty array
@@ -24,6 +25,14 @@ function Discounts() {
 
   return (
     <div className={classes.discountContainer}>
+      <Helmet>
+        <title>Prestige Okno - Discounts</title>
+        <meta
+          name="description"
+          content="Explore discounts on our products"
+        />
+        <link rel="canonical" href="localhost:3000/discounts" />
+      </Helmet>
       <h1 className={classes.discountsLabel}>Новости и акции</h1>
       
 

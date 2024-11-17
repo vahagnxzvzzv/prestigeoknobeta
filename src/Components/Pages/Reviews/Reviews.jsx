@@ -3,6 +3,7 @@ import classes from './Reviews.module.css'
 import ReviewsCard from "./ReviewsCard/ReviewsCard";
 import { useState } from "react";
 import axios from 'axios'
+import { Helmet } from "react-helmet-async";
 
 
 function Reviews() {
@@ -33,35 +34,16 @@ function Reviews() {
         fetchReviews()
     }, [])
 
-    // const [formData, setFormData] = useState({
-    //     name: '',
-    //     grade: '',
-    //     review: '',
-    //     date: '',
-    // })
-
-    // const [reviews, setReviews] = useState([]);
-
-    // const handleChange = (e) => {
-    //     const {name, value} = e.target;
-    //     setFormData({...formData, [name]: value})
-    // }
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     const currentDate = new Date().toLocaleDateString();
-    //     setReviews([...reviews, {...formData, date: currentDate}])
-    //     setFormData({
-    //         name: '',
-    //         grade: '',
-    //         review: '',
-    //         date: '',
-    //     })
-    // }
-
     return (
         <div className={classes.reviews}>
-
+          <Helmet>
+        <title>Prestige Okno - Reviews</title>
+        <meta
+          name="description"
+          content="Let us know your opinion about our service and products!"
+        />
+        <link rel="canonical" href="localhost:3000/reviews" />
+      </Helmet>
         <div>
                 {reviews.map((review) => {
                     return (<ReviewsCard 
