@@ -14,10 +14,19 @@ function BalconiasLoggias() {
   return (
     <div>
       <Helmet>
-        <title>Prestige Okno - Balconies and Loggias</title>
+      <title>Балконы и лоджии в Волгограде | Остекление и ремонт</title>
         <meta
           name="description"
-          content="Stylish and Functional Solutions for Your Balconies and Loggias: "
+          content="Остекление и утепление балконов и лоджий в Волгограде от Okna-Prestige34. Современные технологии, качественные материалы и доступные цены!"
+        />
+        <meta
+          name="keywords"
+          content="балконы Волгоград, остекление лоджий, утепление балконов, ремонт балконов, лоджии под ключ"
+        />
+        <meta property="og:title" content="Балконы и лоджии в Волгограде | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Okna-Prestige34 предлагает остекление и ремонт балконов и лоджий в Волгограде. Закажите профессиональные услуги по доступным ценам!"
         />
         <link rel="canonical" href="localhost:3000/balcony_lodges" />
       </Helmet>

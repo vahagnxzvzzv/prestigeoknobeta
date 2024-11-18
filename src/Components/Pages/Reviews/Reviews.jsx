@@ -37,10 +37,19 @@ function Reviews() {
     return (
         <div className={classes.reviews}>
           <Helmet>
-        <title>Prestige Okno - Reviews</title>
+          <title>Отзывы клиентов о Okna-Prestige34 | Балконы, окна, входные группы</title>
         <meta
           name="description"
-          content="Let us know your opinion about our service and products!"
+          content="Читай отзывы клиентов о компании Okna-Prestige34. Узнай, почему нас выбирают для установки окон, балконов, лоджий и входных групп в Волгограде."
+        />
+        <meta
+          name="keywords"
+          content="отзывы о компании Okna-Prestige34, отзывы о пластиковых окнах, балконах, лоджиях, входных группах, отзывы о строительных услугах"
+        />
+        <meta property="og:title" content="Отзывы клиентов о Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Посмотрите отзывы наших довольных клиентов о компании Okna-Prestige34. Мы предлагаем качественные услуги по установке окон, дверей, балконов и лоджий."
         />
         <link rel="canonical" href="localhost:3000/reviews" />
       </Helmet>

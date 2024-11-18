@@ -26,10 +26,19 @@ function Discounts() {
   return (
     <div className={classes.discountContainer}>
       <Helmet>
-        <title>Prestige Okno - Discounts</title>
+      <title>Скидки на услуги | Okna-Prestige34</title>
         <meta
           name="description"
-          content="Explore discounts on our products"
+          content="Получите скидки на услуги по установке окон, балконов, лоджий и входных групп от Okna-Prestige34. Акции и специальные предложения для наших клиентов."
+        />
+        <meta
+          name="keywords"
+          content="скидки Волгоград, скидки на окна, акции на балконы, скидки на двери"
+        />
+        <meta property="og:title" content="Скидки на услуги | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="У нас действует множество акций и скидок на услуги по установке окон, дверей, балконов и лоджий. Узнайте все подробности!"
         />
         <link rel="canonical" href="localhost:3000/discounts" />
       </Helmet>

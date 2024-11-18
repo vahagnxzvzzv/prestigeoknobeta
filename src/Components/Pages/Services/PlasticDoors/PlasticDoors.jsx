@@ -11,10 +11,19 @@ function PlascticDoors() {
   return (
     <div>
       <Helmet>
-        <title>Prestige Okno - Plastic Windows</title>
+      <title>Пластиковые окна в Волгограде | Высокое качество и доступные цены</title>
         <meta
           name="description"
-          content="Premium Quality Plastic Windows for Every Home: "
+          content="Установка пластиковых окон в Волгограде. Энергоэффективные решения, защита от шума и теплопотерь. Закажите пластиковые окна в Okna-Prestige34!"
+        />
+        <meta
+          name="keywords"
+          content="пластиковые окна Волгоград, установка пластиковых окон, окна на заказ, энергосберегающие окна, пластиковые окна недорого"
+        />
+        <meta property="og:title" content="Пластиковые окна в Волгограде | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Okna-Prestige34 предлагает качественные пластиковые окна с установкой в Волгограде. Защита от шума и теплопотерь. Оформите заказ прямо сейчас!"
         />
         <link rel="canonical" href="localhost:3000/plastic_windows" />
       </Helmet>

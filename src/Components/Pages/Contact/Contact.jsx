@@ -9,11 +9,16 @@ function Contact() {
     return (
         <div className={classes.contact}>
             <Helmet>
-        <title>Prestige Okno - Contact Us</title>
+            <title>Контактная информация | Okna-Prestige34</title>
         <meta
           name="description"
-          content="Let us be in touch with you!"
+          content="Свяжитесь с компанией Okna-Prestige34 для получения консультации по установке окон, балконов, лоджий и входных групп. Мы всегда рады помочь!"
         />
+        <meta
+          name="keywords"
+          content="контакты Okna-Prestige34, как связаться с компанией Okna-Prestige34, консультация по установке окон, балконов, лоджий, входных групп"
+        />
+        <meta property="og:title" content="Контактная информация | Okna-Prestige34" />
         <link rel="canonical" href="localhost:3000/contact" />
       </Helmet>
             <h1>Контакты</h1>

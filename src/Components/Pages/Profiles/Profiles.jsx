@@ -10,11 +10,7 @@ function Profiles() {
   return (
     <div>
       <Helmet>
-        <title>Prestige Okno - Profiles</title>
-        <meta
-          name="description"
-          content="Prestige Okno - Explore our profile pages"
-        />
+      <title>Профили - Okna-Prestige34</title>
         <link rel="canonical" href="localhost:3000/profiles" />
       </Helmet>
       <h1 className={classes.profile_title}>Профили</h1>

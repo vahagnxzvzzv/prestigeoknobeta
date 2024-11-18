@@ -14,6 +14,7 @@ import calculator_icon from '../../Assets/calculator_icon.svg'
 import precent_icon from '../../Assets/precent_icon.svg'
 import verify_icon from '../../Assets/verify_icon.svg'
 import { Helmet } from "react-helmet-async";
+import logo from '../../Assets/prestige_okno_logo_white.svg'
 
 
 
@@ -33,8 +34,16 @@ function Home() {
   return (
     <div className={classes.home}>
       <Helmet>
-        <title>Prestige Okno - Home</title>
-        <meta name="description" content="Prestige Okno is a window industry company with many years of career" />
+      <title>Пластиковые окна, остекление лоджий и балконов в Волгограде | Okna-Prestige34</title>
+      <link rel="icon" href={logo} />
+        <meta name="description" content="Okna-Prestige34 - пластиковые окна, остекление лоджий и балконов в Волгограде. Высокое качество, энергоэффективность и доступные цены." />
+        <meta name="keywords" content="пластиковые окна, окна Волгоград, остекление лоджий, балконы и лоджии, входные группы, остекление балконов" />
+        <meta property="og:title" content="Пластиковые окна и балконы в Волгограде | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Установка пластиковых окон, остекление лоджий и балконов в Волгограде. Доступные цены и профессиональный подход."
+        />
+        <meta name="author" content="Vahagn Gasparyan" /> 
         <link rel="canonical" href="localhost:3000/" />
       </Helmet>
     <div className={classes.carouselContainer}>

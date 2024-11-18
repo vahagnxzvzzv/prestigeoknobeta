@@ -40,10 +40,19 @@ const PhotoGallery = () => {
 
     <div className={classes.portfolioContainer}>
       <Helmet>
-        <title>Prestige Okno - Our works</title>
+      <title>Наши работы | Okna-Prestige34</title>
         <meta
           name="description"
-          content="View our done works!"
+          content="Посмотрите наши работы по установке окон, балконов, лоджий и входных групп. Примеры выполненных проектов компании Okna-Prestige34."
+        />
+        <meta
+          name="keywords"
+          content="работы Okna-Prestige34, примеры окон, балконов, лоджий, входных групп, выполненные работы, портфолио"
+        />
+        <meta property="og:title" content="Наши работы | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Изучите портфолио компании Okna-Prestige34. Мы специализируемся на установке окон, балконов, лоджий и входных групп. Убедитесь в качестве наших услуг!"
         />
         <link rel="canonical" href="localhost:3000/our_works" />
       </Helmet>

@@ -11,10 +11,19 @@ function EntranceGroups() {
   return (
     <div>
       <Helmet>
-        <title>Prestige Okno - Entrance Groups</title>
+      <title>Входные группы в Волгограде | Изготовление и установка</title>
         <meta
           name="description"
-          content="Elegant and Durable Entrance Groups for Your Property"
+          content="Проектирование, изготовление и установка входных групп в Волгограде от Okna-Prestige34. Надежные материалы и современные технологии!"
+        />
+        <meta
+          name="keywords"
+          content="входные группы Волгоград, установка входных групп, проектирование входных групп, входные группы на заказ"
+        />
+        <meta property="og:title" content="Входные группы в Волгограде | Okna-Prestige34" />
+        <meta
+          property="og:description"
+          content="Okna-Prestige34 предлагает изготовление входных групп под ключ. Дизайн, прочность и долговечность. Закажите входную группу сегодня!"
         />
         <link rel="canonical" href="localhost:3000/entrance_groups" />
       </Helmet>
