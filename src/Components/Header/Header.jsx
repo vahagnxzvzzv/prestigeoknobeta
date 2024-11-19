@@ -17,9 +17,9 @@ function Header() {
 
     // Array of options
     const options = [
-        { label: 'Пластиковые окна', link: '/plastic_windows' },
-        { label: 'Балконы и лоджии', link: '/balcony_lodges' },
-        { label: 'Входные группы', link: '/entrance_groups' },
+        { label: 'Пластиковые окна', link: '/plastic-windows' },
+        { label: 'Балконы и лоджии', link: '/balcony-lodges' },
+        { label: 'Входные группы', link: '/entrance-groups' },
     ];
 
     // Only pass labels to the Dropdown
@@ -76,7 +76,7 @@ function Header() {
             {/* </div> */}
             <li><Link to="/discounts">Новости и акции</Link></li>
             <li><Link to="/reviews">Отзывы</Link></li>
-            <li><Link to="/our_works">Наши работы</Link></li>
+            <li><Link to="/our-works">Наши работы</Link></li>
             <li><Link to="/contact">Контакты</Link></li>
           </ul>
         </nav>

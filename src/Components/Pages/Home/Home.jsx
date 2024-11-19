@@ -64,18 +64,18 @@ function Home() {
       <OfferCard 
         offer_image='https://primetechupvc.com/wp-content/uploads/2024/09/upvc-windoww.jpg' 
         offer_button_title='Пластиковые окна'
-        offer_link='./plastic_windows'
+        offer_link='/plastic-windows'
       />
       <OfferCard
         offer_image='https://s0.rbk.ru/v6_top_pics/media/img/2/04/756293100806042.jpg' 
         offer_button_title='Балконы и лоджии'
-        offer_link='./balconies_loggias'
+        offer_link='/balcony-lodges'
       />
       
       <OfferCard 
         offer_image='https://sds163.ru/upload/iblock/c26/c265f288eb382fc209fa4d1b21b9bddf.jpg' 
         offer_button_title='Входные группы'
-        offer_link='./entrance_groups'
+        offer_link='/entrance-groups'
       />
       </div>
     </div>

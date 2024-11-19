@@ -22,7 +22,7 @@ function Footer() {
                 <div className={classes.first_a_group}>
                 <Link to="/">Главная</Link>
                 <Link to="/profiles">Профили</Link>
-                <Link to="/our_works">Наши работы</Link>
+                <Link to="/our-works">Наши работы</Link>
                 </div>
                 <div className={classes.second_a_group}>
                 <Link to="/discounts">Новости и акции</Link>

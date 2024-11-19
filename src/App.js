@@ -38,14 +38,14 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/profiles' element={<Profiles />}/>
                 <Route path='/services' element={<Services />} />
-                <Route path='/plastic_windows' element={<PlascticDoors />} />
-                <Route path='/balcony_lodges' element={<BalconiasLoggias />} />
-                <Route path='/entrance_groups' element={<EntranceGroups/>} />
+                <Route path='/plastic-windows' element={<PlascticDoors />} />
+                <Route path='/balcony-lodges' element={<BalconiasLoggias />} />
+                <Route path='/entrance-groups' element={<EntranceGroups/>} />
                 <Route path='/discounts' element={<Discounts />} />
                 <Route path='/reviews' element={<Reviews />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/measurement' element={<Measurement />} />
-                <Route path='/our_works' element={<Works />}/>
+                <Route path='/our-works' element={<Works />}/>
               </Routes>
             </main>
             <Footer />
