@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {HashRouter as Router, Route, Routes} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async';
 import logo from './logo.svg';
 import './App.css';
@@ -30,7 +30,7 @@ function App() {
         <meta property="og:image" content="https://example.com/image.jpg" />
         <meta property="og:url" content="https://example.com/my-page" />
       </Helmet> */}
-      <Router>
+      <Router basename='/prestigeoknobeta'>
         <div  className="App">
             <Header />
             <main className='main'>
