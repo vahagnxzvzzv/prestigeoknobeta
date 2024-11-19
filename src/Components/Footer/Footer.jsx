@@ -26,7 +26,7 @@ function Footer() {
                 </div>
                 <div className={classes.second_a_group}>
                 <Link to="/discounts">Новости и акции</Link>
-                <Link to="reviews">Отзывы</Link>
+                <Link to="/reviews">Отзывы</Link>
                 <Link to="/contact">Контакты</Link>
                 </div>
                 <div className={classes.navigation_button}>
