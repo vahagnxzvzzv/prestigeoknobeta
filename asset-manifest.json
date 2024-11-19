@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prestigeoknobeta/static/css/main.c4f4e105.css",
-    "main.js": "/prestigeoknobeta/static/js/main.e878ba83.js",
+    "main.js": "/prestigeoknobeta/static/js/main.29121a9c.js",
     "static/js/453.a2304702.chunk.js": "/prestigeoknobeta/static/js/453.a2304702.chunk.js",
     "static/media/home_page_carousel_1.svg": "/prestigeoknobeta/static/media/home_page_carousel_1.71d5080a489ed83c7e640e5698cfc0cf.svg",
     "static/media/balconies_loggias.svg": "/prestigeoknobeta/static/media/balconies_loggias.71b5db3aa0c7f136f6b8905faa56e76d.svg",
@@ -20,16 +20,16 @@
     "static/media/verify_icon.svg": "/prestigeoknobeta/static/media/verify_icon.7220fbd3245d285da0668fe97e38546a.svg",
     "static/media/slick.woff": "/prestigeoknobeta/static/media/slick.295183786cd8a1389865.woff",
     "static/media/tools_icon.svg": "/prestigeoknobeta/static/media/tools_icon.d33d9b2115fb5b46bc5aad3000323d97.svg",
+    "index.html": "/prestigeoknobeta/index.html",
     "static/media/phone_icon.svg": "/prestigeoknobeta/static/media/phone_icon.d36c1c49eb47c15b20ab329d2a28b91b.svg",
     "static/media/precent_icon.svg": "/prestigeoknobeta/static/media/precent_icon.1411c80a57afc6e059d8c6922c99aa16.svg",
-    "index.html": "/prestigeoknobeta/index.html",
     "static/media/calculator_icon.svg": "/prestigeoknobeta/static/media/calculator_icon.49be2cb5d3a301c65d1d2e00fdc6519b.svg",
     "main.c4f4e105.css.map": "/prestigeoknobeta/static/css/main.c4f4e105.css.map",
-    "main.e878ba83.js.map": "/prestigeoknobeta/static/js/main.e878ba83.js.map",
+    "main.29121a9c.js.map": "/prestigeoknobeta/static/js/main.29121a9c.js.map",
     "453.a2304702.chunk.js.map": "/prestigeoknobeta/static/js/453.a2304702.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4f4e105.css",
-    "static/js/main.e878ba83.js"
+    "static/js/main.29121a9c.js"
   ]
 }
