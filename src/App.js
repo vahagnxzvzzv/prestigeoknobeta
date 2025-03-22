@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async';
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
@@ -30,7 +29,7 @@ function App() {
         <meta property="og:image" content="https://example.com/image.jpg" />
         <meta property="og:url" content="https://example.com/my-page" />
       </Helmet> */}
-      <Router basename='/prestigeoknobeta'>
+      <Router>
         <div  className="App">
             <Header />
             <main className='main'>

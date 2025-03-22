@@ -1,8 +1,9 @@
 {
-  "homepage": "https://vahagnxzvzzv.github.io/prestigeoknobeta",
+  
   "name": "prestigeokno-beta",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@pbe/react-yandex-maps": "^1.2.5",
