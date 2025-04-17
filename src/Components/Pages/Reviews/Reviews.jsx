@@ -12,7 +12,7 @@ function Reviews() {
 
     const fetchReviews = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/reviews');
+            const response = await axios.get('http://api.okna-prestige34.ru/reviews');
             setReviews(response.data)
         } catch(error) {
             console.log('fetch error',error)
@@ -22,7 +22,7 @@ function Reviews() {
     const addReview = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('http://localhost:3000/reviews', newReview);
+            await axios.post('http://api.okna-prestige34.ru/reviews', newReview);
             setNewReview({reviewCreator: '', reviewGrade: '', reviewDescription: '' });
             fetchReviews()
         } catch (error) {

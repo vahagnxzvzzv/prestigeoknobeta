@@ -15,7 +15,7 @@ const PhotoGallery = () => {
 
   const fetchPhotos = async (page, limit) => {
     try {
-      const response = await fetch(`http://localhost:3000/photos?page=${page}&limit=${limit}`);
+      const response = await fetch(`http://api.okna-prestige34.ru/photos?page=${page}&limit=${limit}`);
       const data = await response.json();
       setPhotos(data.data);
       setTotalPhotos(data.totalPhotos);
