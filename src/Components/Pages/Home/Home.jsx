@@ -43,8 +43,16 @@ function Home() {
           property="og:description"
           content="Установка пластиковых окон, остекление лоджий и балконов в Волгограде. Доступные цены и профессиональный подход."
         />
+        <meta
+          name="description"
+          content="Пластиковые окна в Волжском по выгодной цене с гарантией. Бесплатный замер и консультация."
+        />
+        <meta
+          name="keywords"
+          content="пластиковые окна волжский, окна, балконы, остекление, установка"
+        />
         <meta name="author" content="Vahagn Gasparyan" /> 
-        <link rel="canonical" href="localhost:3000/" />
+        <link rel="canonical" href="https://okna-prestige34.ru/" />
       </Helmet>
     <div className={classes.carouselContainer}>
       <Slider {...settings}>

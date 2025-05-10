@@ -46,7 +46,9 @@ function Header() {
           </div>
           <img className={classes.logo} src={logo} alt="Logo" />
           <div className={classes.contact_info}>
+            <a href="tel:PHONE">
             <img className={classes.phone_icon} src={phone_icon} alt="Phone Icon" />
+            </a>
             <div className={classes.phoneNumber}>
               <h2>+79033163334</h2>
               {/* <h2>8 (8443) 21-07-08</h2> */}

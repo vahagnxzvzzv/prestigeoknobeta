@@ -15,7 +15,7 @@ const PhotoGallery = () => {
 
   const fetchPhotos = async (page, limit) => {
     try {
-      const response = await fetch(`http://api.okna-prestige34.ru/photos?page=${page}&limit=${limit}`);
+      const response = await fetch(`https://api.okna-prestige34.ru/photos?page=${page}&limit=${limit}`, {referrerPolicy: "unsafe-url" });
       const data = await response.json();
       setPhotos(data.data);
       setTotalPhotos(data.totalPhotos);
@@ -54,7 +54,7 @@ const PhotoGallery = () => {
           property="og:description"
           content="Изучите портфолио компании Okna-Prestige34. Мы специализируемся на установке окон, балконов, лоджий и входных групп. Убедитесь в качестве наших услуг!"
         />
-        <link rel="canonical" href="localhost:3000/our_works" />
+        <link rel="canonical" href="https://okna-prestige34.ru/our_works" />
       </Helmet>
       <h1>Наши работы</h1>
       <div className={classes.photo_grid}>

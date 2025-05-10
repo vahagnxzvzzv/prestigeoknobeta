@@ -12,7 +12,7 @@ function Discounts() {
   // Fetch discounts from the API
   const fetchDiscounts = async () => {
     try {
-      const response = await axios.get("http://api.okna-prestige34.ru/discounts"); // Adjusted port if necessary
+      const response = await axios.get("https://api.okna-prestige34.ru/discounts", ); // Adjusted port if necessary
       setDiscounts(response.data); // Set the discounts state with the fetched data
     } catch (error) {
       console.error("Error occurred while fetching discounts:", error);
